@@ -1,0 +1,47 @@
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin linear-gradient($from-color,$to-color,$percent){
+  background:linear-gradient($from-color,$to-color,$percent);
+  background:-webkit-linear-gradient($from-color,$to-color,$percent);
+  background:-moz-linear-gradient($from-color, $to-color,$percent);
+  background:-o-linear-gradient($from-color, $to-color,$percent);
+}
+
+/*media query mixinis*/
+
+@mixin bp-mobile{
+  @media only screen and (max-width:767px){
+    @content;
+  }
+}
+
+@mixin bp-tablet{
+  @media only screen and (max-width:768px){
+    @content;
+  }
+}
+
+@mixin bp-medium{
+  @media only screen and (max-width:991px){
+    @content;
+  }
+}
+
+@mixin bp-small-desktop{
+  @media only screen and (max-width:1024px){
+    @content;
+  }
+}
+
+/*helper mq*/
+
+@mixin bp-helper{
+  @media only screen and (max-width:1200px){
+    @content;
+  }
+}

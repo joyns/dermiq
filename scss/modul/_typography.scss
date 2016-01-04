@@ -1,0 +1,46 @@
+h1 {
+  margin: .67em 0;
+  font-size:$tertiary-font!important;
+  font-weight:$bold-weight;
+  padding:2px 30px 0;
+  position:relative;
+  z-index:1;
+  display:inline-block;
+
+}
+
+h2{
+  font-size:$tertiary-font!important;
+  font-weight:$bold-weight;
+  padding:3px 30px 0;
+  position:relative;
+  z-index:1;
+  display:inline-block;
+}
+
+h5{
+  font-size:$quaternary-font;
+  font-weight:$semi-bold-weight;
+}
+
+p{
+  font-size:$primary-font;
+  text-align:justify;
+  padding: 0 20px;
+  @include bp-medium {
+    text-align:left;
+  }
+}
+
+.header-background-primary{
+  background-color:$primary-color;
+}
+
+.header-background-secondary{
+  background-color:$secondary-color;
+  color:$primary-color;
+}
+
+.header-background-quaternary{
+  background-color:$quaternary-color;
+}

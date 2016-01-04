@@ -1,0 +1,86 @@
+
+.navbar {
+  position: relative;
+  min-height: 90px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 13px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-default {
+  background-color:$primary-color;
+  text-transform:uppercase;
+}
+
+.navbar-default .navbar-brand {
+  color: $secondary-color;
+  font-size:12px;
+  font-weight:$light-weight;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $secondary-color;
+  font-size:$secondary-font;
+  font-weight:$bold-weight;
+  margin-top:10px;
+}
+
+.navbar-header button{
+  float:right;
+}
+.fix-padd{
+  padding-top:10px;
+}
+
+.fix-padd1{
+  padding-top:15px;
+}
+
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align:center;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+
+  background-color: transparent;
+  @extend .hvr-float-shadow;
+  outline:0;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus, {
+  color: $secondary-color;
+  border:1px solid white;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+
+  background-color: transparent;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: $secondary-color;
+  text-decoration: none;
+  background-color: $primary-color;
+  font-weight:$bold-weight;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: $primary-color;
+  outline: 0;
+  font-weight:$bold-weight;
+}

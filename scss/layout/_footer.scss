@@ -1,0 +1,25 @@
+footer{
+  background-color:$quaternary-color;
+  color:$secondary-color;
+  padding-top:10px;
+
+  span{
+    display:block;
+    padding-top:20px;
+    height:50px;
+  }
+}
+.icons{
+  height:50px;
+}
+.foot{
+  width:100%;
+  display:inline-block;
+}
+
+.foot-col{
+  display:inline-block;
+  width:220px;
+  vertical-align:top;
+
+}

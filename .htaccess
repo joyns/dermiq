@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www\.dermiqpro\.co\.rs$
+RewriteRule ^(.*)$ http://www.dermiqpro.co.rs/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.php?\ HTTP/
+RewriteRule ^(.*)index\.php?$ http://www.dermiqpro.co.rs/$1 [R=301,L]
+RewriteRule ^(.*)index\.php\.php?$ http://www.dermiqpro.co.rs/$1 [R=301,L]
+</IfModule>
+
